@@ -8,5 +8,7 @@ MERGED=$(paste -d '\0' <(echo -n $PASS | fold -w1) <(echo -n $RAND | fold -w1) |
 
 HASH=$(echo -n $MERGED | md5sum)
 
-echo -e $HSAH
+PAYLOAD="password=$HSAH"
+
+echo -e $PAYLOAD
 
