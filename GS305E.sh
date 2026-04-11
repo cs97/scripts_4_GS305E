@@ -10,5 +10,5 @@ HASH=$(echo -n $MERGED | md5sum)
 
 PAYLOAD="password=$HSAH"
 
-echo -e $PAYLOAD
+curl -X POST http://192.168.0.239/login.cgi -d 'password=$PAYLOAD'
 
