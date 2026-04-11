@@ -8,7 +8,7 @@ MERGED=$(paste -d '\0' <(echo -n $PASS | fold -w1) <(echo -n $RAND | fold -w1) |
 
 HASH=$(echo -n $MERGED | md5sum)
 
-PAYLOAD="password=$HSAH"
+PAYLOAD="password=$HASH"
 
 curl -X POST http://192.168.0.239/login.cgi -d '$PAYLOAD'
 
