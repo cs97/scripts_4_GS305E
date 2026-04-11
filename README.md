@@ -11,10 +11,10 @@ ip link set eth0 up
 
 ### api
 ```
-192.168.168.0.239/login.cgi
+192.168.0.239/login.cgi
 ```
 ```
-192.168.168.0.239/jquery.md5?z10
+192.168.0.239/jquery.md5?z10
 ```
 ```
 
